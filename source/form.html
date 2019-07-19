@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" target="_blank" href="htmlacademy.ru">Html academy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__control">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+        </div>
+      </nav>
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img class="page-header__top-logo" src="http://placehold.it/102x83" alt="Logo Sedona">
+          <img class="page-header__title-img" src="http://placehold.it/320x156" alt="Welcom to gargeous Sedona">
+        </a>
+      </div>
+    </header>
+
+    <main class="page-content">
+
+      <section class="page-intro">
+        <h2 class="page-intro__header">Оставьте свой отзыв</h2>
+        <p class="page-intro__content">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <form class="recall-form" action="/" method="post">
+        <fieldset class="form-section">
+          <legend class="form-section__title">
+            Представьтесь:
+          </legend>
+          <ul class="section-list">
+            <li class="list-item">
+              <label class="list-item__label" for="name">Имя<sup>*</sup>:</label>
+              <input type="text" id="name" name="name" placeholder="Петр">
+            </li>
+            <li class="list-item">
+              <label class="list-item__label" for="surname">Фамилия<sup>*</sup>:</label>
+              <input type="text" id="surname" name="surname" placeholder="Иванов">
+            </li>
+            <li class="list-item">
+              <label class="list-item__label" for="middlename">Отчество<sup>*</sup>:</label>
+              <input type="text" id="middlename" name="middlename" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-section">
+          <legend class="form-section__title">Контактная информация:</legend>
+          <ul class="section-list">
+            <li class="list-item">
+              <label class="list-item__label" for="tel">Контактный телефон<sup>*</sup>:</label>
+              <div class="contacts-input">
+                <input type="tel" id="tel" name="tel" placeholder="Введите телефон">
+                  <img class="contacts-input__icon" src="http://placehold.it/18x18">
+              </div>
+            </li>
+            <li class="list-item">
+              <label class="list-item__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <div class="contacts-input">
+                <input type="email" id="email" name="email" placeholder="Введите e-mail">
+                  <img class="contacts-input__icon" src="http://placehold.it/18x18">
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-section">
+          <legend class="form-section__title">Ваше общее впечатление:</legend>
+          <ul class="section-list">
+            <li class="list-item">
+              <input type="radio" name="interview" value="positive" id="radio-1" checked>
+              <label class="list-item__label-interwiew" for="radio-1">Скорее положительное</label>
+            </li>
+            <li class="list-item">
+              <input type="radio" name="interview" value="negative" id="radio-2">
+              <label class="list-item__label-interwiew" for="radio-2">Скорее отрицательное</label>
+            </li>
+            <li class="list-item">
+              <input type="radio" name="interview" value="negative" id="radio-3">
+              <label class="list-item__label-interwiew" for="radio-3">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-section">
+          <legend class="form-section__title">Посещенные достопримечательности:</legend>
+          <ul class="section-list">
+            <li class="list-item">
+              <input type="checkbox" name="devils-bridge" id="checkbox-1" checked>
+              <label class="list-item__label-interwiew" for="checkbox-1">Мост Дьявола</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="slide-park" id="checkbox-2" checked>
+              <label class="list-item__label-interwiew" for="checkbox-2">Слайд-парк</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="mountain-bell" id="checkbox-3">
+              <label class="list-item__label-interwiew" for="checkbox-3">Гора-Колокол</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="red-rocks" id="checkbox-4" checked>
+              <label class="list-item__label-interwiew" for="checkbox-4">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-section">
+          <legend class="form-section__title">Опишите свои эмоции:</legend>
+          <textarea class="message-input" id="message" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <div class="recall-form__bottom-wrap">
+          <input class="btn  recall-form__btn" type="submit" value="Отправить отзыв">
+        </div>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="page-footer__header">#visitsedona</h2>
+      <div class="page-footer__social">
+          <a class="social-link" href="http://twitter.com">
+            Мы в Твиттере
+            <img class="social-link__icon-tw" src="http://placehold.it/48x48" alt="Ссылка на твиттер Седоны">
+          </a>
+          <a class="social-link" href="http://facebook.com">
+            Мы в Фейсбуке
+            <img class="social-link__icon-fb" src="http://placehold.it/48x48" alt="Ссылка на фейсбук Седоны">
+          </a>
+          <a class="social-link" href="http://youtube.com">
+            Мы на Ютубе
+            <img class="social-link__icon-yt" src="http://placehold.it/48x48" alt="Ссылка на твиттер Седоны">
+          </a>
+      </div>
+      <dvi class="page-footer__copyright">
+        <a class="copyright-link" href="https://htmlacademy.ru">
+          Разработано
+          <img class="copyright-link__icon" src="http://placehold.it/44x34" alt="Ссылка на твиттер Седоны">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
