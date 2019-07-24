@@ -1,0 +1,28 @@
+.page-header {
+  .reset-spaces();
+
+  &__logo {
+    .reset-spaces();
+    min-height: 158px;
+    padding-top: 52px;
+    background-color: #e4f1f9;
+    background-image: url("@{img-path}/bg-intro-triangle-mobile.svg"), url("@{img-path}/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position: 50% bottom;
+  }
+
+  &__logo--index {
+    min-height: 389px;
+    padding-top: 90px;
+  }
+
+  &__banner {
+    width: 230px;
+  }
+
+  &__logo--index &__banner  {
+    width: 280px;
+  }
+}
+

@@ -1,0 +1,41 @@
+.photo-caption {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    .title (@fsz: @base-font-size);
+  }
+
+  &__auth {
+    text-transform: none;
+  }
+
+  &__like {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+  }
+  &__like-icon-wrapper {
+    display: block;
+    width: 22px;
+    height: 20px;
+    line-height: 0;
+  }
+
+  &__like-icon {
+    fill: #b2b2b2;
+  }
+
+  &__like-count {
+    display: block;
+    height: 14px;
+    padding-left: 10px;
+    .title (@fsz: @base-font-size, @lh: 14px);
+  }
+}
+
+
+

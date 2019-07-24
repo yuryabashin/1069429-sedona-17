@@ -1,0 +1,32 @@
+.feauters {
+  .reset-spaces();
+  .set-color();
+}
+
+.feauter {
+  display: flex;
+  padding: 20px 20px;
+  line-height: 21px;
+  text-align: left;
+
+  &__icon-wrapper {
+    display: block;
+    width: 39px;
+    height: 37px;
+  }
+
+  &__icon {
+    width: 37px;
+    height: 37px;
+    fill: @main-color;
+  }
+
+  &__desc {
+    padding-left: 20px;
+  }
+
+  &__title {
+    .title();
+    line-height: 37px;
+  }
+}
