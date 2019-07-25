@@ -8,7 +8,10 @@
   list-style: none;
 }
 
-.title (@fsz: @font-size-1, @lh: @base-line-height, @clr: @black, @ttr: uppercase) {
+.title(@fsz: @font-size-1,
+@lh: @base-line-height,
+@clr: @black,
+@ttr: uppercase) {
   font-size: @fsz;
   font-weight: bold;
   line-height: @lh;
@@ -16,7 +19,13 @@
   text-transform: @ttr;
 }
 
-.set-color (@clr: @base-text-color, @bgclr: @white) {
+.set-color(@clr: @base-text-color,
+  @bgclr: @white) {
   color: @clr;
   background-color: @bgclr;
+}
+
+.btn-colors() {
+  color: @white;
+  background-color: @main-color;
 }
