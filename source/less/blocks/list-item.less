@@ -16,7 +16,25 @@
     padding: 0 20px;
     border: none;
     outline: none;
-    color: @black;
+
+    &::-webkit-input-placeholder {
+      color: @black;
+    }
+
+    &::-moz-placeholder {
+      color: @black;
+      text-overflow: ellipsis;
+    }
+
+    &:-moz-placeholder {
+      color: @black;
+      text-overflow: ellipsis;
+    }
+
+    &:-ms-input-placeholder {
+      color: @black;
+      text-overflow: ellipsis;
+    }
   }
 
   &--contacts {
@@ -31,4 +49,3 @@
     text-align: left;
   }
 }
-
