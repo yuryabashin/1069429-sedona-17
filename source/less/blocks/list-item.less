@@ -2,41 +2,6 @@
   display: flex;
   margin-bottom: 20px;
 
-  &__label {
-    line-height: 58px;
-    padding-right: 20px;
-  }
-
-  &__input {
-    .reset-spaces();
-    .title(@ttr: none);
-    .set-color(@black, @darker-5pct-color);
-    height: 58px;
-    width: 100%;
-    padding: 0 20px;
-    border: none;
-    outline: none;
-
-    &::-webkit-input-placeholder {
-      color: @black;
-    }
-
-    &::-moz-placeholder {
-      color: @black;
-      text-overflow: ellipsis;
-    }
-
-    &:-moz-placeholder {
-      color: @black;
-      text-overflow: ellipsis;
-    }
-
-    &:-ms-input-placeholder {
-      color: @black;
-      text-overflow: ellipsis;
-    }
-  }
-
   &--contacts {
     display: flex;
     flex-direction: column;
@@ -47,5 +12,40 @@
     margin-left: 20px;
     margin-bottom: 5px;
     text-align: left;
+  }
+}
+
+.list-item__label {
+  line-height: 58px;
+  padding-right: 20px;
+}
+
+.list-item__input {
+  .reset-spaces();
+  .title(@ttr: none);
+  .set-color(@black, @darker-5pct-color);
+  height: 58px;
+  width: 100%;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+
+  &::-webkit-input-placeholder {
+    color: @black;
+  }
+
+  &::-moz-placeholder {
+    color: @black;
+    text-overflow: ellipsis;
+  }
+
+  &:-moz-placeholder {
+    color: @black;
+    text-overflow: ellipsis;
+  }
+
+  &:-ms-input-placeholder {
+    color: @black;
+    text-overflow: ellipsis;
   }
 }
