@@ -1,0 +1,45 @@
+.main-nav {
+  .reset-spaces();
+  position: relative;
+}
+
+.main-nav__list {
+  .reset-list();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  user-select: none;
+  font-size: @font-size-1;
+  font-weight: bold;
+  min-height: 55px;
+  line-height: 53px;
+}
+
+.main-nav__link {
+  display: block;
+  color: @white;
+  background-color: @main-color;
+}
+
+.main-nav__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  outline: 0;
+  background: url("@{img-path}/icon-cross.svg") no-repeat 50% 50%;
+  background-size: 23px 22px;
+}

@@ -1,0 +1,44 @@
+.advantage {
+  .reset-spaces();
+  .set-color(@clr: @white, @bgclr: @main-color);
+
+  &--triangle {
+    padding-top: 36px;
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-image: url("@{img-path}/bg-triangle.svg");
+  }
+
+  &--grey {
+    .set-color(@bgclr: @grey);
+  }
+}
+
+.advantage__desc {
+  padding: 40px 20px;
+}
+
+.advantage__desc-title {
+  .title(@fsz: @font-size-1, @clr: @white);
+
+  &--black {
+    .title(@clr: @black);
+  }
+}
+
+.advantage__desc-number {
+  margin: 12px 0;
+
+  &::before {
+    content: "- ";
+  }
+
+  &::after {
+    content: " -";
+  }
+}
+
+.advantage__photo {
+  line-height: 0;
+  background-color: #aab7a5;
+}
