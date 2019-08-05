@@ -42,3 +42,65 @@
   line-height: 0;
   background-color: #aab7a5;
 }
+
+
+/*-----TABLET Section-----*/
+
+ @media @tablet-widths {
+
+  .advantage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: none;
+    padding-top: 0;
+
+     &:nth-of-type(2) {
+      flex-flow: row-reverse;
+    }
+  }
+
+  .advantage__desc-title {
+    margin: 15px 0 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    &--black {
+      width: 156px;
+      margin: 0 auto;
+    }
+  }
+
+  .advantage__desc {
+    padding: 30px 43px;
+    width: 256px;
+    min-height: 196px;
+  }
+
+  .advantage__photo {
+    width: 512px;
+    height: 256px;
+    padding: 0;
+  }
+}
+
+
+/*-----DERKTOP Section-----*/
+
+ @media @desktop-widths {
+
+    .advantage__desc {
+    padding: 30px 43px;
+    width: 400px;
+    min-height: 196px;
+  }
+
+  .advantage__photo {
+    width: 800px;
+    height: 256px;
+    padding: 0;
+  }
+
+
+ }
