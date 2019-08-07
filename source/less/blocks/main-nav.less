@@ -22,6 +22,10 @@
   display: block;
   color: @white;
   background-color: @main-color;
+
+  &--active {
+    background-color: #5496bd;
+  }
 }
 
 .main-nav__logo {
@@ -42,4 +46,54 @@
   outline: 0;
   background: url("@{img-path}/icon-cross.svg") no-repeat 50% 50%;
   background-size: 23px 22px;
+}
+
+/*-----TABLET Section-----*/
+
+@media @tablet-widths {
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    display: block;
+    width: 20%;
+    border: none;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      height: 55px;
+      order: 3;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 14px;
+    color: @black;
+    background-color: @white;
+
+    &--active {
+      color: #d6d0cc;
+      background-color: @white;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -8,6 +8,19 @@
   list-style: none;
 }
 
+.adaptive-container() {
+  width: @mobile-max-width;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: @tablet-max-width;
+  }
+
+  @media @desktop-widths {
+    width: @desktop-max-width;
+  }
+}
+
 .title(@fsz: @font-size-1,
 @lh: @base-line-height,
 @clr: @black,

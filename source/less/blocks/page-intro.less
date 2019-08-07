@@ -1,9 +1,48 @@
 .page-intro {
   .reset-spaces();
-  padding: 40px 6px;
+  padding: 20px 25px 25px;
 }
 
 .page-intro__header {
-  .title();
-  margin-bottom: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 18px;
+
+  @media @desktop-widths {
+    padding: 0 210px;
+  }
+}
+
+.page-intro__content {
+  margin: 25px 0 0;
+  font-size: 14px;
+}
+
+
+/*-----TABLET Section-----*/
+
+@media @tablet-widths {
+  .page-intro {
+    padding: 28px 85px 40px;
+  }
+
+  .page-intro__header {
+    padding: 0 10px;
+    margin-top: 22px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .page-intro__content {
+    margin-top: 28px;
+    margin-bottom: 11px;
+    margin-right: 105px;
+    margin-left: 105px;
+
+    &--top {
+      margin-right: 80px;
+      margin-left: 80px;
+    }
+  }
 }
