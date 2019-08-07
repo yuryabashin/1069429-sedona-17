@@ -12,46 +12,51 @@
   background-size: auto, auto;
   background-position: 50% bottom;
 
-  @media @tablet-widths {
-    min-height: 290px;
-    padding-top: 100px;
-    background-size: auto, 1200px 518px;
-    background-image: url("@{img-path}/bg-intro-triangle-tablet.svg"), url("@{img-path}/bg-back-tablet@1x.jpg");
-  }
-
-   @media @tablet-widths {
-      background-size: auto, 1200px 518px;
-      background-image: url("@{img-path}/bg-intro-triangle-desktop.svg"), url("@{img-path}/bg-back-desktop@1x.jpg");
-    }
-
   &--index {
     min-height: 389px;
     padding-top: 90px;
-
-    @media @tablet-widths {
-      min-height: 518px;
-      padding-top: 78px;
-    }
-
-     @media @desktop-widths {
-      min-height: 518px;
-      padding-top: 78px;
-    }
   }
 }
 
 .page-header__banner {
   width: 230px;
 
-  @media @tablet-widths {
-      width: 460px;
-    }
-
   &--index {
     width: 280px;
+  }
+}
 
-    @media @tablet-widths {
+/*-----TABLET Section-----*/
+
+@media @tablet-widths {
+
+  .page-header__logo {
+    min-height: 290px;
+    padding-top: 100px;
+    background-size: auto, 1200px 518px;
+    background-image: url("@{img-path}/bg-intro-triangle-tablet.svg"), url("@{img-path}/bg-back-tablet@1x.jpg");
+
+    background-size: auto, 1200px 518px;
+    background-image: url("@{img-path}/bg-intro-triangle-desktop.svg"), url("@{img-path}/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__banner {
+    width: 460px;
+
+    &--index {
       width: 460px;
+  }
+}
+
+/*-----DESKTOP Section-----*/
+
+@media @desktop-widths {
+
+  .page-header__logo {
+
+    &--index {
+      min-height: 518px;
+      padding-top: 78px;
     }
   }
 }
