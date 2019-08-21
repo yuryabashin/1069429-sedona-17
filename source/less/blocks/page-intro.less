@@ -1,48 +1,143 @@
+/**
+  * ===========================================================
+  * PAGE INTRO
+  * ===========================================================
+  */
+
 .page-intro {
-  .reset-spaces();
-  padding: 20px 25px 25px;
+  position: relative;
+  padding: 20px 25px;
+  padding-bottom: 25px;
+
+  background-color: #ffffff;
+
+  &--decorated::after {
+    content: '';
+
+    .img-x-center(320px);
+
+    bottom: -19px;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url('../img/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 2;
+  }
+
+  &--tiny {
+    padding: 18px 20px;
+    margin-bottom: -1px;
+  }
 }
 
 .page-intro__header {
-  font-weight: 700;
-  margin: 20px 0;
-  font-size: 18px;
+  margin: 20px 0px;
 
-  @media @desktop-widths {
-    padding: 0 210px;
-  }
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-intro__content {
-  margin: 25px 0 0;
+  margin: 25px 0px;
+  margin-bottom: 0px;
+
   font-size: 14px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  &--tiny {
+    margin-bottom: 2px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 
-/*-----TABLET Section-----*/
+/**
+  * ===========================================================
+  * PAGE INTRO tablet
+  * ===========================================================
+  */
 
 @media @tablet-widths {
+
   .page-intro {
-    padding: 28px 85px 40px;
+    padding: 28px 85px;
+    padding-bottom: 40px;
+
+    &--decorated::after {
+      display: none;
+    }
   }
 
   .page-intro__header {
-    padding: 0 10px;
+    padding: 0px 10px;
     margin-top: 22px;
+
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: bold;
+
+    &--large {
+      margin-top: 47px;
+
+      font-size: 30px;
+      line-height: 26px;
+    }
   }
 
   .page-intro__content {
     margin-top: 28px;
     margin-bottom: 11px;
-    margin-right: 105px;
-    margin-left: 105px;
 
-    &--top {
-      margin-right: 80px;
-      margin-left: 80px;
+    &--tiny {
+      padding: 0px 80px;
+    }
+  }
+}
+
+
+/**
+  * ===========================================================
+  * PAGE INTRO desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+
+  .page-intro {
+    padding: 28px 85px;
+    padding-bottom: 40px;
+
+    &--tiny {
+      padding-bottom: 10px;
+    }
+  }
+
+  .page-intro__header {
+    padding: 0px 210px;
+
+    &--large {
+      margin-top: 85px;
+    }
+  }
+
+  .page-intro__content {
+
+    &--tiny {
+      margin-bottom: 33px;
+      padding: 0px 295px;
     }
   }
 }

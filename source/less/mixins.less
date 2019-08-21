@@ -1,11 +1,10 @@
-.reset-spaces() {
-  margin: 0;
-  padding: 0;
-}
 
-.reset-list() {
-  .reset-spaces();
-  list-style: none;
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .adaptive-container() {
@@ -21,24 +20,75 @@
   }
 }
 
-.title(@fsz: @font-size-1,
-@lh: @base-line-height,
-@clr: @black,
-@ttr: uppercase) {
-  font-size: @fsz;
-  font-weight: bold;
-  line-height: @lh;
-  color: @clr;
-  text-transform: @ttr;
+/**
+  * Выравнивает картинку по центру родительского блока
+  * Родитель: position: realtive;
+  */
+.img-center(@width, @height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -@width / 2;
+  margin-top: -@height / 2;
 }
 
-.set-color(@clr: @base-text-color,
-  @bgclr: @white) {
-  color: @clr;
-  background-color: @bgclr;
+/**
+  * Выравнивает по горизонтале картинку по центру родительского блока
+  * Родитель: position: realtive;
+  */
+.img-x-center(@width) {
+  position: absolute;
+  left: 50%;
+  margin-left: -@width / 2;
 }
 
-.btn-colors() {
-  color: @white;
-  background-color: @main-color;
+/**
+  * Выравнивает текст в родительском блоке по вертикале
+  *
+  */
+.text-vertical-align(@height) {
+  line-height: @height;
+  vertical-align: middle;
+}
+
+/**
+  * Выравнить блок по горизонтале
+  *
+  */
+.block-center(@width) {
+  width: @width;
+  margin: 0 auto;
+}
+
+/**
+  * Раскладка карточками
+  *
+  */
+.cards() {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/**
+  * Абсолютно спозиционированный элемент
+  *
+  */
+.absolute-top-left(@top: 0, @left: 0, @width: 0, @height: 0) {
+    position: absolute;
+
+    top: @top;
+    left: @left;
+
+    width: @width;
+    height: @height;
+}
+
+.absolute-top-right(@top: 0, @right: 0, @width: 0, @height: 0) {
+    position: absolute;
+
+    top: @top;
+    right: @right;
+
+    width: @width;
+    height: @height;
 }

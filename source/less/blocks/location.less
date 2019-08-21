@@ -1,0 +1,79 @@
+/**
+  * ===========================================================
+  * MAP SECTION
+  * ===========================================================
+  */
+
+.location {
+  position: relative;
+
+  height: 350px;
+}
+
+.location__map {
+  max-width: 100%;
+  height: auto;
+
+  z-index: 0;
+}
+
+.location__map-frame {
+  position: absolute;
+
+  top: 0px;
+  left: 50%;
+
+  margin-left: -600px;
+
+  height: 350px;
+  width: 1200px;
+
+  border: 0px;
+  frameborder: 0;
+
+  z-index: 1000;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.location__mark {
+
+  .absolute-top-left(161px, 146px, 27px, 27px);
+
+  z-index: 100;
+}
+
+/**
+  * ===========================================================
+  * HOTEL SEARCH SECTION tablet
+  * ===========================================================
+  */
+
+@media @tablet-widths {
+
+  .location__mark {
+
+    .absolute-top-left(163px, 370px, 27px, 27px);
+
+    z-index: 100;
+  }
+}
+
+/**
+  * ===========================================================
+  * ADVANTAGES SECTION desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+
+  .location__mark {
+
+    .absolute-top-left(162px, 586px, 27px, 27px);
+
+    z-index: 100;
+  }
+
+}
