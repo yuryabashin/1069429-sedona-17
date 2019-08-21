@@ -1,14 +1,269 @@
+/**
+  * ===========================================================
+  * PHOTOS SECTION
+  * ===========================================================
+  */
+
 .photo-list {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: normal;
+
+  background-color: #ffffff;
 }
 
-/*-----TABLET Section-----*/
+.photo-list__item {
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 9px;
+
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+
+  border-top: 1px solid #e5e5e5;
+
+  & img {
+    display: block;
+  }
+}
+
+.photo-list__item-caption {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px;
+  padding-top: 15px;
+
+  width: 280px;
+}
+
+.photo-list__item-id {
+  width: 100%;
+}
+
+.photo-list__item-name {
+
+  margin: 0px;
+  padding: 0px;
+
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.photo-list__item-author {
+  margin: 0px;
+  padding: 0px;
+}
+
+.photo-list__like-btn {
+  position: relative;
+
+  align-self: flex-start;
+
+  margin: 0px;
+  padding: 0px;
+  padding-left: 33px;
+  min-width: 70px;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: left;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.photo-list__like-btn-icon {
+  .absolute-top-left(7px, 0px, 22px, 20px);
+}
+
+/**
+  * ===========================================================
+  * PHOTOS SECTION tablet
+  * ===========================================================
+  */
 
 @media @tablet-widths {
+
   .photo-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     padding: 21px 60px;
+
+    font-size: 0px;
+  }
+
+  .photo-list__item {
+    padding: 0px;
+    margin: 0px;
+
+    width: 50%;
+
+    border: none;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 267px;
+    }
+
+    &--large .photo-list__item-id {
+      width: 500px;
+    }
+
+    &--large {
+      width: 100%;
+      height: 480px;
+    }
+
+    &--large img {
+      width: 100%;
+      height: 400px;
+    }
+
+    &:nth-child(2n + 3) .photo-list__item-caption {
+      background-color: #eaeaea;
+    }
+  }
+
+  .photo-list__item-caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    padding: 15px 20px;
+    padding-right: 10px;
+    padding-bottom: 17px;
+    margin: 0px;
+
+    width: 100%;
+
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+
+  .photo-list__item-id {
+    width: 210px;
+  }
+
+  .photo-list__item-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .photo-list__item-author {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .photo-list__like-btn {
+
+    margin-top: 8px;
+    margin-right: 9px;
+
+    height: 35px;
+
+    text-align: left;
+
+    &::before {
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  .photo-list__like-btn-icon {
+    top: 5px;
+    left: 5px;
+
+  }
+}
+
+/**
+  * ===========================================================
+  * PHOTOS SECTION desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+
+  .photo-list {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .photo-list__item {
+    position: relative;
+
+    flex-grow: 1;
+
+    padding: 0px;
+    margin: 0px;
+
+    width: 33.33%;
+    height: 267px;
+
+    color: #ffffff;
+    border: none;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 267px;
+    }
+
+    &--large {
+      width: 100%;
+      min-height: 400px;
+    }
+
+    &--large .photo-list__item-id {
+      width: 1000px;
+    }
+
+    &--large img {
+      width: 100%;
+      height: 400px;
+    }
+
+    &:nth-child(2n + 3) .photo-list__item-caption {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .photo-list__item-caption {
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-list__item-id {
+    width: 280px;
+  }
+
+  .photo-list__like-btn {
+    color: #ffffff;
+
+    &::before {
+      filter: brightness(0%) invert(100%);
+    }
   }
 }

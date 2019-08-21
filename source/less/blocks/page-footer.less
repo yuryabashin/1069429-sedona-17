@@ -1,51 +1,151 @@
+/**
+  * ===========================================================
+  * PAGE FOOTER
+  * ===========================================================
+  */
+
 .page-footer {
-  .reset-spaces();
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0;
+  padding: 18px 15px;
+
+  max-width: @page-max-width;
+
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: normal;
+
+  background-color: #fefefe;
+  text-align: center;
 }
 
 .page-footer__header {
-  .title(@fsz: @font-size-2);
-  margin-bottom: 30px;
-}
+  margin-bottom: 32px;
 
-.page-footer__social {
-  .reset-spaces();
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-transform: uppercase;
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: center;
-}
+  position: relative;
 
-.page-footer__copyright-text {
-  line-height: 48px;
-  padding-right: 12px;
+  margin: 0 auto;
+  margin-top: 36px;
+
+  min-width: 128px;
+
+  font-size: 14px;
+  line-height: 26px;
+
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .page-footer__copyright-link {
-  display: block;
-  width: 27px;
-  height: 48px;
+  display: inline-block;
+  position: relative;
+
   padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+
+  color: #000000;
+  text-decoration: none;
 }
 
-/*-----TABLET Section-----*/
+.page-footer__copyright-icon {
+
+  position: absolute;
+
+  top: 4px;
+  right: -8px;
+
+  width: 44px;
+  height: 34px;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
+/**
+  * ===========================================================
+  * PAGE FOOTER tablet
+  * ===========================================================
+  */
 
 @media @tablet-widths {
+
   .page-footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 60px;
+    padding: 20px 60px;
+
+    .clearfix();
+  }
+
+  .page-footer__header {
+    vertical-align: top;
+
+    float: left;
+    margin: 25px 0px;
+
+    width: 235px;
+
+    text-align: left;
+  }
+
+  .page-footer__social {
+    vertical-align: top;
+
+    float: left;
+
+    width: 156px;
+    margin: 10px 10px;
+    margin-left: 10px;
   }
 
   .page-footer__copyright {
-    margin-bottom: 30px;
+    vertical-align: top;
+
+    float: right;
+
+    margin: 0px;
+    margin-top: 19px;
+
+    width: 228px;
+
+    text-align: right;
+  }
+}
+
+
+/**
+  * ===========================================================
+  * PAGE FOOTER desktop
+  * ===========================================================
+  */
+
+@media @desktop-widths {
+
+  .page-footer {
+    padding: 20px 43px;
+    padding-left: 131px;
+  }
+
+  .page-footer__header {
+
+    width: 375px;
+  }
+
+  .page-footer__social {
+    margin: 10px 15px;
+  }
+
+  .page-footer__copyright {
+    width: 278px;
   }
 }
