@@ -13,25 +13,25 @@ mainNavigation.classList.remove("main-nav--nojs");
 
 btnOpenNavigation.addEventListener("click", function() {
 
-	if (mainNvaigationItems.classList.contains("hidden")) {
+  if (mainNvaigationItems.classList.contains("hidden")) {
 
-		mainNvaigationItems.classList.remove("hidden");
+	  mainNvaigationItems.classList.remove("hidden");
 
-		btnOpenNavigation.classList.add("hidden");
-		btnCloseNavigation.classList.remove("hidden");
-	}
+	  btnOpenNavigation.classList.add("hidden");
+	  btnCloseNavigation.classList.remove("hidden");
+  }
 });
 
 
 btnCloseNavigation.addEventListener("click", function() {
 
-	if (!mainNvaigationItems.classList.contains("hidden")) {
+  if (!mainNvaigationItems.classList.contains("hidden")) {
 
-		mainNvaigationItems.classList.add("hidden");
+	  mainNvaigationItems.classList.add("hidden");
 
-		btnOpenNavigation.classList.remove("hidden");
-		btnCloseNavigation.classList.add("hidden");
-	}
+	  btnOpenNavigation.classList.remove("hidden");
+	  btnCloseNavigation.classList.add("hidden");
+  }
 });
 
 /*
@@ -81,6 +81,5 @@ if (recallForm) {
  * Интерактивная карта на главной странице
  */
 
- var locationMapFrame = document.querySelector(".location__map-frame");
-
- locationMapFrame.classList.remove("location__map-frame--nojs");
+var locationMapFrame = document.querySelector(".location__map-frame");
+  locationMapFrame.classList.remove("location__map-frame--nojs");
