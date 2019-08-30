@@ -15,10 +15,10 @@ btnOpenNavigation.addEventListener("click", function() {
 
   if (mainNvaigationItems.classList.contains("hidden")) {
 
-	  mainNvaigationItems.classList.remove("hidden");
+    mainNvaigationItems.classList.remove("hidden");
 
-	  btnOpenNavigation.classList.add("hidden");
-	  btnCloseNavigation.classList.remove("hidden");
+    btnOpenNavigation.classList.add("hidden");
+    btnCloseNavigation.classList.remove("hidden");
   }
 });
 
@@ -27,10 +27,10 @@ btnCloseNavigation.addEventListener("click", function() {
 
   if (!mainNvaigationItems.classList.contains("hidden")) {
 
-	  mainNvaigationItems.classList.add("hidden");
+    mainNvaigationItems.classList.add("hidden");
 
-	  btnOpenNavigation.classList.remove("hidden");
-	  btnCloseNavigation.classList.add("hidden");
+    btnOpenNavigation.classList.remove("hidden");
+    btnCloseNavigation.classList.add("hidden");
   }
 });
 

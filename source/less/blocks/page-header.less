@@ -14,9 +14,9 @@
 
   height: 388px;
 
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 0px;
+  background-position: center 0;
   background-size: 768px auto;
 
   &--tiny {
@@ -26,17 +26,17 @@
   }
 
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
 
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
 
     width: 320px;
     height: 26px;
 
-    background-image: url('../img/bg-intro-triangle-mobile.svg');
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -45,8 +45,7 @@
 }
 
 @media @mobile-widths and (min-resolution: 144dpi),
-        @mobile-widths and (min-resolution: 1.5dppx) {
-
+  @mobile-widths and (min-resolution: 1.5dppx) {
   .page-header__logo {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 768px auto;
@@ -54,7 +53,6 @@
 }
 
 .page-header__top-logo {
-
   position: absolute;
 
   top: -57px;
@@ -70,7 +68,6 @@
 
 
 .page-header__logo-text {
-
   .img-x-center(460px);
 
   top: 30px;
@@ -87,7 +84,6 @@
 }
 
 .page-header__title-image {
-
   .img-x-center(325px);
 
   top: 88px;
@@ -107,12 +103,11 @@
   */
 
 @media @tablet-widths {
-
   .page-header__logo {
 
     height: 518px;
 
-    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 768px auto;
 
     &--tiny {
@@ -127,13 +122,12 @@
       width: 768px;
       height: 57px;
 
-      background-image: url('../img/bg-intro-triangle-tablet.svg');
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
   }
 
   @media @tablet-widths and (min-resolution: 144dpi),
-        @tablet-widths and (min-resolution: 1.5dppx) {
-
+    @tablet-widths and (min-resolution: 1.5dppx) {
     .page-header__logo {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 768px auto;
@@ -143,11 +137,11 @@
   .page-header__bg-image {
     position: relative;
 
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .page-header__top-logo {
@@ -190,10 +184,9 @@
   */
 
 @media @desktop-widths {
-
   .page-header__logo {
 
-    background-image: url('../img/bg-back-desktop@1x.jpg');
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px auto;
 
     &::after {
@@ -201,7 +194,7 @@
       width: 1200px;
       height: 57px;
 
-      background-image: url('../img/bg-intro-triangle-desktop.svg');
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
 
     &--tiny {
@@ -214,8 +207,7 @@
   }
 
   @media @desktop-widths and (min-resolution: 144dpi),
-        @desktop-widths and (min-resolution: 1.5dppx) {
-
+    @desktop-widths and (min-resolution: 1.5dppx) {
     .page-header__logo {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 1200px auto;
@@ -223,7 +215,6 @@
   }
 
   .page-header__top-logo {
-
     position: absolute;
 
     top: -56px;
