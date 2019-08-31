@@ -12,7 +12,7 @@
   background-color: #ffffff;
 
   &--decorated::after {
-    content: '';
+    content: "";
 
     .img-x-center(320px);
 
@@ -21,7 +21,7 @@
     width: 320px;
     height: 37px;
 
-    background-image: url('../img/bg-triangle.svg');
+    background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -35,7 +35,7 @@
 }
 
 .page-intro__header {
-  margin: 20px 0px;
+  margin: 20px 0;
 
   font-size: 18px;
   line-height: 26px;
@@ -46,8 +46,8 @@
 }
 
 .page-intro__content {
-  margin: 25px 0px;
-  margin-bottom: 0px;
+  margin: 25px 0;
+  margin-bottom: 0;
 
   font-size: 14px;
   line-height: 26px;
@@ -71,7 +71,6 @@
   */
 
 @media @tablet-widths {
-
   .page-intro {
     padding: 28px 85px;
     padding-bottom: 40px;
@@ -82,7 +81,7 @@
   }
 
   .page-intro__header {
-    padding: 0px 10px;
+    padding: 0 10px;
     margin-top: 22px;
 
     font-size: 21px;
@@ -102,7 +101,7 @@
     margin-bottom: 11px;
 
     &--tiny {
-      padding: 0px 80px;
+      padding: 0 80px;
     }
   }
 }
@@ -115,7 +114,6 @@
   */
 
 @media @desktop-widths {
-
   .page-intro {
     padding: 28px 85px;
     padding-bottom: 40px;
@@ -126,7 +124,7 @@
   }
 
   .page-intro__header {
-    padding: 0px 210px;
+    padding: 0 210px;
 
     &--large {
       margin-top: 85px;
@@ -134,10 +132,9 @@
   }
 
   .page-intro__content {
-
     &--tiny {
       margin-bottom: 33px;
-      padding: 0px 295px;
+      padding: 0 295px;
     }
   }
 }
