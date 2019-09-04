@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона Фото</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +19,7 @@
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav  main-nav--nojs">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list hidden">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -32,13 +34,13 @@
           </li>
         </ul>
         <div class="main-nav__control">
-          <button class="main-nav__btn  main-nav__btn-open hidden" type="button">
+          <button class="main-nav__btn  main-nav__btn-open" type="button">
             <svg  class="main-nav__btn-icon  main-nav__btn-icon--menu" width="23" height="21">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
             </svg>
             Открыть меню
           </button>
-          <button class="main-nav__btn  main-nav__btn-close  main-nav__btn-close" type="button">
+          <button class="main-nav__btn  main-nav__btn-close hidden" type="button">
             <svg  class="main-nav__btn-icon  main-nav__btn-icon--cross" width="25" height="23">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use>
             </svg>
@@ -223,7 +225,7 @@
       </span>
       </p>
       <p class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg class="page-footer__copyright-icon" width="44" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-htmlacademy"></use>
@@ -233,6 +235,7 @@
     </footer>
   </div>
   <script src="js/app.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>
